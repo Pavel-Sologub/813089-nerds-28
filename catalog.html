@@ -22,29 +22,70 @@
   <main>
     <h1>Магазин готовых шаблонов</h1>
     <section>
-      <form>
+      <form action="#" method="post">
+        <label for="qwe">стоимость:<br>
+          <input type="range" min="0" max="15000" step="1" id="qwe">
+        </label><br>
+        <label>от
+          <input name="min-price" type="text" value="0">
+        </label>
+        <label>до
+          <input name="max-price" type="text" value="15000">
+        </label>
         <h2>Сетка:</h2>
-        <input type="radio" name="question-one" value="q">Адаптивная
-        <input type="radio" name="question-one" value="p">Фиксированая
-        <input type="radio" name="question-one" value="b">Резиновая
+        <input type="radio" name="grid" id="adaptive" value="adaptive">
+        <label for="adaptive">Адаптивная</label>
+        <input type="radio" name="grid" id="fluid" value="fluid" checked>
+        <label for="fluid">Резиновая</label>
+        <input type="radio" name="grid" id="fix" value="fix">
+        <label for="fix">Фиксированная</label>
         <h2>Особенности:</h2>
-        <input type="checkbox">Слайдер<br>
-        <input type="checkbox">Блок преимуществ<br>
-        <input type="checkbox">Новости<br>
-        <input type="checkbox">Галерея<br>
-        <input type="checkbox">Корзина<br>
+        <input type="checkbox" name="slider" id="slider" checked>
+        <label for="slider">Слайдер</label><br>
+        <input type="checkbox" name="advantage" id="advantage">
+        <label for="advantage">Блок преимуществ</label><br>
+        <input type="checkbox" class="filter__check" name="news" id="news" checked>
+        <label for="news">Новости</label><br>
+        <input type="checkbox" name="gallery" id="gallery">
+        <label for="gallery">Галерея</label><br>
+        <input type="checkbox" name="basket" id="basket">
+        <label for="basket">Корзина</label><br>
         <input type="submit" value="Показать">
       </form>
     </section>
     <section>
       <h2>Товар</h2>
       <ul>
-        <li><a href="#"><img src="img/jpg/sedona.jpg" width="200" height="350" alt="Макет проекта Седона"></a></li>
-        <li><a href="#"><img src="img/jpg/pink.jpg" width="200" height="350" alt="Макет проекта Пинк"></a></li>
-        <li><a href="#"><img src="img/jpg/barbershop.jpg" width="200" height="350" alt="Макет проекта Барбершоп"></a></li>
-        <li><a href="#"><img src="img/jpg/mishka.jpg" width="200" height="350" alt="Макет проекта Машка"></a></li>
-        <li><a href="#"><img src="img/jpg/training-portal.jpg" width="200" height="350" alt="Макет учебного портала"></a></li>
-        <li><a href="#"><img src="img/jpg/kvass-shop.jpg" width="200" height="350" alt="Макет проекта Кваст"></a></li>
+        <li>
+          <a href="#">
+            <img src="img/jpg/sedona.jpg" width="200" height="350" alt="Макет проекта Седона">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/jpg/pink.jpg" width="200" height="350" alt="Макет проекта Пинк">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/jpg/barbershop.jpg" width="200" height="350" alt="Макет проекта Барбершоп">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/jpg/mishka.jpg" width="200" height="350" alt="Макет проекта Машка">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/jpg/training-portal.jpg" width="200" height="350" alt="Макет учебного портала">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/jpg/kvass-shop.jpg" width="200" height="350" alt="Макет проекта Кваст">
+          </a>
+        </li>
       </ul>
     </section>
   </main>
