@@ -11,7 +11,7 @@
     </a>
     <nav>
       <ul>
-        <li><a href="#">Студия</a></li>
+        <li><a href="index.html">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
         <li><a href="catalog.html">Магазин</a></li>
         <li><a href="#">Контакты</a></li>
@@ -22,9 +22,9 @@
   <main>
     <h1>Магазин готовых шаблонов</h1>
     <section>
-      <form action="#" method="post">
-        <label for="qwe">стоимость:<br>
-          <input type="range" min="0" max="15000" step="1" id="qwe">
+      <form action="#" method="Post">
+        <label for="min-max">стоимость:<br>
+          <input type="range" min="0" max="15000" step="1" id="min-max">
         </label><br>
         <label>от
           <input name="min-price" type="text" value="0">
@@ -40,15 +40,15 @@
         <input type="radio" name="grid" id="fix" value="fix">
         <label for="fix">Фиксированная</label>
         <h2>Особенности:</h2>
-        <input type="checkbox" name="slider" id="slider" checked>
+        <input type="checkbox" name="slider" id="slider" value="slider" checked>
         <label for="slider">Слайдер</label><br>
-        <input type="checkbox" name="advantage" id="advantage">
+        <input type="checkbox" name="advantage" id="advantage" value="advantage">
         <label for="advantage">Блок преимуществ</label><br>
-        <input type="checkbox" class="filter__check" name="news" id="news" checked>
+        <input type="checkbox" class="filter__check" name="news" id="news" value="news" checked>
         <label for="news">Новости</label><br>
-        <input type="checkbox" name="gallery" id="gallery">
+        <input type="checkbox" name="gallery" id="gallery" value="gallery">
         <label for="gallery">Галерея</label><br>
-        <input type="checkbox" name="basket" id="basket">
+        <input type="checkbox" name="basket" id="basket" value="basket">
         <label for="basket">Корзина</label><br>
         <input type="submit" value="Показать">
       </form>
@@ -98,5 +98,17 @@
     <p>Давайте дружить, это выгодно!</p>
     <p>Скидка 10% для друзей из социальных сетей.</p>
   </footer>
+  <p>Напишите нам!</p>
+  <form action="#" method="Post" class="visually-hidden">
+    <label for="login">Ваше имя<br>
+      <input id="login" type="text" name="login" placeholder="Представьтесь, пожалуйста">
+    </label><br>
+    <label for="email">Ваш e-mail<br>
+      <input type="email" name="email" id="email" placeholder="Для отправки ответа">
+    </label><br>
+    <p>Текст письма<br>
+      <textarea name="comment" id="comment-field" rows="4" placeholder="В свободной форме"></textarea></p>
+      <button type="submit">Отправить</button>
+    </form>
 </body>
 </html>
